@@ -17,11 +17,10 @@ def count_vowels(text: str) -> int:
 
 ## Shared task
 
-### Shared prompt
+## Shared prompt
 ```text
-Copilot CLI: copilot -p "Write a Python function named count_vowels(text: str) -> int that counts the vowels a, e, i, o, and u regardless of case. Do not count y. Return the total number of vowels in the string."
-
-AntigravityCLI: agy -p "Write a Python function named count_vowels(text: str) -> int that counts the vowels a, e, i, o, and u regardless of case. Do not count y."
+copilot -p "Write a Python function named count_vowels(text: str) -> int that counts the vowels a, e, i, o, and u regardless of case. Do not count y. Return the total number of vowels in the string."
+agy -p "Write a Python function named count_vowels(text: str) -> int that counts the vowels a, e, i, o, and u regardless of case. Do not count y."
 ```
 
 ### Copilot CLI observations
@@ -43,4 +42,3 @@ AntigravityCLI: agy -p "Write a Python function named count_vowels(text: str) ->
 
 When I look at how each tool fits into my workflow, they all serve different purposes. The browser chat is the easiest place for me to think through ideas, ask questions, and get explanations in normal language. GitHub Copilot in VS Code is helpful when I’m already writing code and want quick suggestions without leaving the editor. Copilot CLI feels more direct and fast for generating small functions or checking code behavior from the terminal. Antigravity CLI is the most structured and gives detailed reasoning, which helps when I want a clearer breakdown of changes. Right now, I prefer using browser chat plus Antigravity because they give me the most guidance. But if I were working on a bigger project with lots of files open, I could see myself switching to VS Code Copilot more often.
 
-<!-- trigger actions -->
