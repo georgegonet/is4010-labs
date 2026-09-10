@@ -6,18 +6,18 @@ Do not include passwords, tokens, API keys, or complete authentication output.
 
 ### GitHub Copilot CLI
 
-python
+```python
 def count_vowels(text: str) -> int:
     return sum(character.lower() in "aeiou" for character in text)
-
+```
 
 ### Antigravity CLI
 
- Installed and authenticated successfully. Version: 1.1.23
+Installed and authenticated successfully. Version: 1.1.23
 
 ## Shared task
 
-## Shared prompt
+### Shared prompt
 ```text
 copilot -p "Write a Python function named count_vowels(text: str) -> int that counts the vowels a, e, i, o, and u regardless of case. Do not count y. Return the total number of vowels in the string."
 agy -p "Write a Python function named count_vowels(text: str) -> int that counts the vowels a, e, i, o, and u regardless of case. Do not count y."
@@ -30,7 +30,7 @@ agy -p "Write a Python function named count_vowels(text: str) -> int that counts
 ### Antigravity CLI observations
 
  On the other hand with Antigravity, it suggested something very similar. An integer that returns the count of the count of a,e,i,o,u. There is also something else at the bottom that says something about vowels = set("aeiouAEIOU) which I am assuming is just testing case sensative vowels. I think I will be using this one.  
-## Comparison
+### Comparison
 
  Copilot gave me a short and compact version of the function. It lowers each character and checks if it’s in the string of vowels. The code works, but it does extra lowercase operations on every character. Antigravity’s version is a little more detailed and uses a set containing both uppercase and lowercase vowels. I liked this because it makes checking faster and easier to understand because the set already includes every single vowel form. Both tools produced correct solutions, but Antigravity’s approach feels clearer and more organized. Because of that, I decided to use the Antigravity version in my final code. 
 
